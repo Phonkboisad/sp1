@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Personal Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <p class="wordmark">Mohammad Irfan</p>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Mohammad Irfan</span>.<br>I build things for the web.</h1>
+          <p class="hero-lede">I'm a second-year Computer Science and Engineering student at IIUC, learning to turn ideas into clean, working software one small project at a time.</p>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-image">
+          <img src="image/IIUC_Central_Mosque_front_view.jpg" alt="Front view of the IIUC Central Mosque, showing its pink dome and minaret" width="640" height="480">
+          <p class="hero-caption">IIUC Central Mosque — my campus</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="wrap about-inner">
+        <img src="image/formal pic.jpeg" alt="IRFAN'S Picture" width="400" height="400">
+        
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I'm a Software Development student who enjoys figuring out how the pieces of a website fit together — structure, style, and the small details that make a page feel right. This site itself is a class project: a first step in building things with semantic HTML and CSS and shipping them live.</p>
+          <p>Outside of coursework, I like exploring campus, tinkering with small scripts, and reading up on how well-designed products are put together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+          <li class="skill-card">
+            <h3>HTML5</h3>
+            <p>Structuring pages with semantic, accessible markup.</p>
+          </li>
+          <li class="skill-card">
+            <h3>CSS3</h3>
+            <p>Styling layouts with Flexbox, Grid, and responsive design.</p>
+          </li>
+          <li class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Adding interactivity and handling basic logic in the browser.</p>
+          </li>
+          <li class="skill-card">
+            <h3>Git &amp; GitHub</h3>
+            <p>Tracking changes and managing projects with version control.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="image/IIUC_Central_Mosque_front_view.jpg" alt="Front view of the IIUC Central Mosque">
+            <div class="project-body">
+              <h3>Campus Photo Gallery</h3>
+              <p>A small responsive gallery page featuring landmarks around the IIUC campus, starting with the Central Mosque. Built to practice CSS Grid and image optimization.</p>
+            </div>
+          </article>
+          <article class="project-card">
+           <img src="image/web.jpeg" alt="Front view of my website">
+            
+            <div class="project-body">
+              <h3>Personal Profile Page</h3>
+              <p>This very site — a single-page profile built with semantic HTML5 and hand-written CSS, deployed live as a class assignment for CSE-2340.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="wrap contact-inner">
+        <div class="contact-text">
+          <h2>Contact</h2>
+          <p>Have a question or want to work together? Send a message, or reach me directly by email.</p>
+          <p class="contact-email">
+            <a href="mailto:irfan.md.11140@gmail.com">irfan.md.11140@gmail.com</a>
+          </p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Mohammad Irfan. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
